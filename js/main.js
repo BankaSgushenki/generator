@@ -8,7 +8,7 @@ Array.prototype.getRandomItem = function() {
 var Generator = React.createClass({
   getText: function() {
   	var data = this.props.data;
-  	return data.desription.getRandomItem() + data.names.getRandomItem() + data.actions.getRandomItem() + data.reasons.getRandomItem();
+  	return data.desription.getRandomItem() + ' ' + data.names.getRandomItem() + ' ' + data.actions.getRandomItem() + ' ' + data.reasons.getRandomItem();
   },
   getInitialState: function() {
     return {text: this.getText(), auto: false};
